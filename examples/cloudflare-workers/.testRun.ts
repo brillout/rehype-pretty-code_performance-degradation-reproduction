@@ -15,6 +15,14 @@ function testRun(
   const isWrangler = cmd === 'npm run preview:wrangler'
   const isWorker = isMiniflare || isWrangler
 
+  // Skip wrangler until static assets serving is reliable again
+  if (isWrangler) {
+    const msg = 'SKIPPED wrangler.'
+    console.log(msg)
+    test(msg, () => {})
+    return
+  }
+
   if ((isWindows() || isNode12()) && isWorker) {
     const msg = 'SKIPPED miniflare and wrangler for windows.'
     console.log(msg)
