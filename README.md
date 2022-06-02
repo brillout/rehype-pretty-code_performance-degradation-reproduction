@@ -1,18 +1,20 @@
-*Like Next.js / Nuxt but as do-one-thing-do-it-well Vite plugin.*
+Reproduction steps:
 
-Intro & docs: [vite-plugin-ssr.com](https://vite-plugin-ssr.com)
-<br/>
-Examples (official): [examples/](https://github.com/brillout/vite-plugin-ssr/tree/master/examples)
-<br/>
-Examples (community): [examples/README.md](https://github.com/brillout/vite-plugin-ssr/tree/master/examples#community-examples)
+```bash
+git clone git@github.com:brillout/rehype-pretty-code_performance-degradation-reproduction
+cd rehype-pretty-code_performance-degradation-reproduction/
+pnpm run setup
+pnpm install
+pnpm run build
+cd docs/ && pnpm run preview
+```
 
-Version history & breaking changes: [CHANGELOG.md](/CHANGELOG.md)
+As single line:
 
-Follow: [Twitter > @brillout](https://twitter.com/brillout)
-<br/>
-Chat: <a href="https://discord.com/invite/dSDMGGJZQy">Discord > Vike<img src="/docs/icons/hash.svg" height="17" width="23" valign="text-bottom" alt="hash"/>vite-plugin-ssr</a>
+```bash
+git clone git@github.com:brillout/rehype-pretty-code_performance-degradation-reproduction && cd rehype-pretty-code_performance-degradation-reproduction/ && pnpm run setup && pnpm install && pnpm run build && cd docs/ && pnpm run preview
+```
 
+Node.js crashes with a heap out-of-memory error.
 
-Have a question? Want a feature? A tool integration is not working?
-<a href="https://discord.com/invite/dSDMGGJZQy">Join our Discord</a> or
-<a href="https://github.com/brillout/vite-plugin-ssr/issues/new">open a GitHub ticket</a>.
+Changing `package.json#pnpm.overrides.rehype-pretty-code` from `0.2.5` to `0.2.4` fixes the issue.
