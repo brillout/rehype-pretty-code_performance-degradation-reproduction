@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 overrides:
   vite: npm:@brillout/vite@3.0.0-pr-8217.1
   vite-plugin-ssr: link:./vite-plugin-ssr/
-  rehype-pretty-code: 0.2.5
+  rehype-pretty-code: 0.3.2
 
 importers:
 
@@ -10022,8 +10022,8 @@ packages:
       rc: 1.2.8
     dev: false
 
-  /rehype-pretty-code/0.2.5_shiki@0.10.1:
-    resolution: {integrity: sha512-Gm7EquFGiM8ucJ2neHKzSmV5Nb1b6dBQlTEXyWbGUZZQF5sJc5RI8yw2v9C1swomqyINil4vk5T6jNOkbHtEDA==}
+  /rehype-pretty-code/0.3.2_shiki@0.10.1:
+    resolution: {integrity: sha512-G7JZDlbaw22QqjuaQ46c+fkQhXC/AD9nMQO3bbnj86jD54uv1QcpyUtSd/elp49vRafM/wZI1XPrOvca0LTt/Q==}
     engines: {node: ^12.16.0 || >=13.2.0}
     peerDependencies:
       shiki: '*'
@@ -11747,7 +11747,7 @@ packages:
       express: 4.18.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-      rehype-pretty-code: 0.2.5_shiki@0.10.1
+      rehype-pretty-code: 0.3.2_shiki@0.10.1
       remark-gfm: 3.0.1
       shiki: 0.10.1
       twemoji: 13.1.1

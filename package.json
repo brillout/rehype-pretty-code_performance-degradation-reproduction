@@ -53,7 +53,7 @@
     "overrides": {
       "vite": "npm:@brillout/vite@3.0.0-pr-8217.1",
       "vite-plugin-ssr": "link:./vite-plugin-ssr/",
-      "rehype-pretty-code": "0.2.5"
+      "rehype-pretty-code": "0.3.2"
     }
   }
 }
