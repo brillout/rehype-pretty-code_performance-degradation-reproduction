@@ -1,3 +1,5 @@
+**Update**: Fixed, see `fix` branch and https://github.com/atomiks/rehype-pretty-code/issues/36.
+
 Reproduction steps:
 
 ```bash
